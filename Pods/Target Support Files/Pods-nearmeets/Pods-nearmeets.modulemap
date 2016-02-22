@@ -1,0 +1,6 @@
+framework module Pods_nearmeets {
+  umbrella header "Pods-nearmeets-umbrella.h"
+
+  export *
+  module * { export * }
+}
