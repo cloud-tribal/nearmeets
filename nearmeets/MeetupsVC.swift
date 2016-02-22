@@ -88,7 +88,7 @@ class MeetupsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
     }
     
     func presentErrorMessage() {
-        let alertController = UIAlertController(title: "You need to input your API key!", message: "Just stick it in the API_KEY variable in Key.swift", preferredStyle: UIAlertControllerStyle.Alert)
+        let alertController = UIAlertController(title: "You need to input your meetups.com API key!", message: "Just stick it in the API_KEY variable in Key.swift", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "Got it", style: UIAlertActionStyle.Default, handler: { uiAlertAction -> Void in }))
         self.presentViewController(alertController, animated: true, completion: nil)
     }
