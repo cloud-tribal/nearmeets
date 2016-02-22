@@ -47,6 +47,9 @@ class MeetupsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
             fetchMeetups(userLocation.coordinate.latitude, lon: userLocation.coordinate.longitude) { meetups, error in
                 if error != nil {
                     print("Error fetching meetups :\(error)")
+                    if error!.code == 1 {
+                        self.presentErrorMessage()
+                    }
                 }
                 if let meetups = meetups {
                     self.meetupList = meetups
@@ -82,5 +85,11 @@ class MeetupsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return meetupSections[section].date
+    }
+    
+    func presentErrorMessage() {
+        let alertController = UIAlertController(title: "You need to input your API key!", message: "Just stick it in the API_KEY variable in Key.swift", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Got it", style: UIAlertActionStyle.Default, handler: { uiAlertAction -> Void in }))
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
 }

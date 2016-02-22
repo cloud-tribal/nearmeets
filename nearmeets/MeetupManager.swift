@@ -36,6 +36,10 @@ func fetchMeetups(lat: Double, lon: Double, complete: (meetups: [Meetup]?, error
                 complete(meetups: [], error: emptyResponseError)
                 
             } else {
+                if meetupsJSON["code"] == "not_authorized" {
+                    let notAuthorizedError = NSError(domain: "notAuthorized", code: 1, userInfo: nil)
+                    complete(meetups:[], error: notAuthorizedError)
+                }
                 let meetups = parseMeetups(meetupsJSON)
                 complete(meetups: meetups, error: nil)
             }
