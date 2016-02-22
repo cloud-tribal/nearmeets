@@ -23,8 +23,8 @@
 		9ECDC3341C7ABBA4002ED935 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ECDC3321C7ABBA4002ED935 /* LaunchScreen.storyboard */; };
 		9ECDC3361C7ABC49002ED935 /* MeetupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECDC3351C7ABC49002ED935 /* MeetupCell.swift */; };
 		9ECDC33C1C7ADE53002ED935 /* SwiftLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECDC33B1C7ADE53002ED935 /* SwiftLoader.framework */; };
-		9ECDC33E1C7AE701002ED935 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECDC33D1C7AE701002ED935 /* Key.swift */; };
 		9ECDC3401C7AECD8002ED935 /* DeniedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECDC33F1C7AECD8002ED935 /* DeniedVC.swift */; };
+		9ECDC3421C7B6A5D002ED935 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECDC3411C7B6A5D002ED935 /* Key.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,8 +49,8 @@
 		9ECDC3331C7ABBA4002ED935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = nearmeets/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		9ECDC3351C7ABC49002ED935 /* MeetupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeetupCell.swift; path = nearmeets/MeetupCell.swift; sourceTree = SOURCE_ROOT; };
 		9ECDC33B1C7ADE53002ED935 /* SwiftLoader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftLoader.framework; path = "Pods/../build/Debug-iphoneos/SwiftLoader.framework"; sourceTree = "<group>"; };
-		9ECDC33D1C7AE701002ED935 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = SOURCE_ROOT; };
 		9ECDC33F1C7AECD8002ED935 /* DeniedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeniedVC.swift; path = nearmeets/DeniedVC.swift; sourceTree = SOURCE_ROOT; };
+		9ECDC3411C7B6A5D002ED935 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Key.swift; path = nearmeets/Key.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +148,7 @@
 			children = (
 				9ECDC3111C7AB642002ED935 /* LocationManager.swift */,
 				9ECDC3141C7AB642002ED935 /* MeetupManager.swift */,
-				9ECDC33D1C7AE701002ED935 /* Key.swift */,
+				9ECDC3411C7B6A5D002ED935 /* Key.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -289,7 +289,7 @@
 				9ECDC3241C7AB642002ED935 /* OnboardVC.swift in Sources */,
 				9ECDC31D1C7AB642002ED935 /* LaunchVC.swift in Sources */,
 				9ECDC3401C7AECD8002ED935 /* DeniedVC.swift in Sources */,
-				9ECDC33E1C7AE701002ED935 /* Key.swift in Sources */,
+				9ECDC3421C7B6A5D002ED935 /* Key.swift in Sources */,
 				9ECDC31E1C7AB642002ED935 /* LocationManager.swift in Sources */,
 				9ECDC3181C7AB642002ED935 /* AppDelegate.swift in Sources */,
 				9ECDC31F1C7AB642002ED935 /* Meetup.swift in Sources */,
