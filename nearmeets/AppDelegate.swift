@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let window = application.windows.first!
+        let backgroundView = UIImageView(frame: window.frame)
+        backgroundView.contentMode = UIViewContentMode.ScaleAspectFill
+        backgroundView.image = UIImage(named: "summerFlags")!
+        window.addSubview(backgroundView)
+        
         return true
     }
 
