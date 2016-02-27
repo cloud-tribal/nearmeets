@@ -1,8 +1,7 @@
 //
 //  LocationManager.swift
-//  meetSoon
+//  nearmeets
 //
-//  Created by Anyss Hamza on 2016-02-19.
 //  Copyright © 2016 prop. All rights reserved.
 //
 
